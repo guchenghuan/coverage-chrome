@@ -1,0 +1,43 @@
+body {
+  width: 225px;
+  height: 135px;
+  text-align: center;
+}
+
+.box {
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei",
+    sans-serif;
+  margin: 20px;
+  font-size: 22px;
+}
+
+.el-button.is-round {
+  border-radius: 20px;
+  padding: 12px 23px;
+  margin-top: 25px;
+}
+
+.el-button--success {
+  color: rgb(255 255 255);
+  background-color: rgb(103 194 58);
+  border-color: rgb(103 194 58);
+}
+
+.el-button {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid rgb(220 223 230);
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  transition: 0.1s;
+  font-weight: 500;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+}

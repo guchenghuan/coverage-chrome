@@ -1,0 +1,41 @@
+{
+    "manifest_version": 2,
+    "name": "Hello",
+    "version": "1.0.0",
+    "description": "Hello, Chrome extension.",
+    "icons": {
+        "16": "img/16.png",
+        "48": "img/48.png",
+        "128": "img/128.png"
+    },
+    "background": {
+        "scripts": [
+            "js/background.js"
+        ]
+    },
+    "browser_action": {
+        "default_icon": "img/16.png",
+        "default_title": "数据上报",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "<all_urls>",
+        "tabs",
+        "activeTab",
+        "http://10.23.176.55:8988/bilibili/webcoverage/client"
+    ],
+    "homepage_url": "https://github.com/IMT-happy",
+    "content_scripts": [
+        {
+            "js": [
+                "js/content_script.js"
+            ],
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "content_security_policy": "style-src 'self' 'unsafe-inline';script-src 'self' 'unsafe-eval' https://cdn.bootcss.com; object-src 'self' ;"
+}
