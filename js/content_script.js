@@ -3,7 +3,7 @@
 setTimeout(function () {
     var ss = document.createElement('script')
 
-    ss.src = "https://10.23.176.55:8988/test.js"
+    ss.src = "https://172.16.39.188:8988/chrometest.js"
 
     document.body.appendChild(ss)
 }, 3000)
